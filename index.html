@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Login Form with Logo</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-size: cover;
+        }
+
+        .first {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: rgba(0, 0, 0, 0.5); 
+        }
+
+        .second {
+            background-color: #fff;
+            padding: 50px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+        }
+
+        .second img {
+            max-width: 100px;
+            margin-bottom: 20px;
+            border-radius: 100%;
+        }
+
+        .second h2 {
+            margin-bottom: 20px;
+            color:bl
+        }
+
+        .second input[type="text"],
+        .second input[type="password"],
+        .second select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .second input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color:green;
+            border: none;
+            color: white;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .third input[type="button"]{
+            width:65px;
+            padding: 10px;
+            background-color:red;
+            border:none;
+            color: white;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 15px;
+        }
+
+        .third input[type="button"]:hover {
+            background-color:rgb(235, 73, 73);
+        }
+
+        .second input[type="submit"]:hover {
+            background-color: #56f05e;
+        }
+
+        .third {
+            margin-top: 10px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .third a {
+            text-decoration: none;
+            color:black;
+        }
+
+        .third a:hover {
+            color:blue;
+        }
+
+        @media only screen and (min-width: 450px) and (max-width:600px) {
+            
+            .second {
+                height: vh;
+                width: 100%;
+                background-color: #a7f184;
+            }
+        }
+        @media only screen and (min-width: 600px) and (max-width:900px)
+         
+    {
+
+              .second {
+                height: vh;
+                width: 70%;
+                background-color: rgb(216, 145, 133);
+              }
+            }
+        
+    </style>
+</head>
+<body>
+    <div class="first">
+        <div class="second">
+            
+            <img src="data:image/jpeg;base64,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" alt="not found" >
+            <h2>Login Form</h2>
+            <form action="#">
+                <input type="text" placeholder="Username" required>
+                <input type="password" placeholder="Password" required>
+                <input type="submit" value="Login">
+                <div>
+                    <input type="checkbox" id="remember" name="Remember me">
+                    <label for="remember">Remember Me</label>
+                </div>
+            </form>
+            
+          
+            <div class="third">
+                <input type="button" value="cancel">
+                <p>Forget <a href="#">possword?</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
